@@ -1,1 +1,33 @@
 // Mixins Here
+
+.flex-base(@justifyContent, @alignContent, @flexDirection){
+    display:flex;
+    justify-content: @justifyContent;
+    align-content: @alignContent;
+    flex-direction: @flexDirection;
+}
+
+.flex-base-light(@justifyContent){
+    display: flex;
+    justify-content:@justifyContent;
+}
+
+.flex-reset(){
+    display:block;
+}
+
+.navAnchor {
+    text-decoration: none;
+    color: @ebony-clay;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.signupButton(){
+    background-color:@wild-sand;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    width: 85%;
+}
