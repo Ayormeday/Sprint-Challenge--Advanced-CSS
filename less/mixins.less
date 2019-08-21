@@ -1,1 +1,48 @@
 // Mixins Here
+
+.flex-base(@justifyContent, @alignContent, @flexDirection){
+    display:flex;
+    justify-content: @justifyContent;
+    align-content: @alignContent;
+    flex-direction: @flexDirection;
+}
+
+.flex-base-soft(@flexDirection){
+    display: flex;
+    flex-direction: @flexDirection;
+}
+
+
+.display-none(){
+    display:none;
+}
+
+.navAnchor {
+    text-decoration: none;
+    color: @ebony-clay;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.signupButton(){
+    background-color:@button-background-color-dark;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem .5rem;
+    text-align: center;
+    width: 40%;
+}
+
+.signupButtonPhone(){
+    background-color:@button-background-color-dark;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem .5rem;
+    text-align: center;
+    width: 100%;
+}
+   
